@@ -10,7 +10,7 @@
 
       <span class="interactive-notice">
         interactive version of this portfolio
-        <a href="https://v1.sdulal.dev" target="_blank">v1.sdulal.dev</a>
+        <a href="https://v1.sdulal.dev" target="_blank" rel="noopener">v1.sdulal.dev</a>
       </span>
     </div>
   </header>
@@ -27,19 +27,19 @@
 
       <nav class="social-bar">
         @for (link of socialLinks; track link.label) {
-          <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="social-link">
+          <a [href]="link.url" target="_blank" rel="noopener" class="social-link">
             {{ link.label }}
           </a>
         }
       </nav>
 
       <div class="projects-wrapper">
-        <button class="toggle-btn" (click)="toggleProjects()">PROJECTS</button>
+        <button class="toggle-btn" (click)="toggleProjects()" type="button">PROJECTS</button>
 
         @if (showProjects) {
           <div class="projects-dropdown">
             @for (p of projects; track p.name) {
-              <a [href]="p.url" class="project-item" target="_blank" rel="noopener noreferrer">
+              <a [href]="p.url" class="project-item" target="_blank" rel="noopener">
                 {{ p.name }}
               </a>
             }

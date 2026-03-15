@@ -3,7 +3,7 @@
 <div align="center">
   <br />
     <a>
-      <img width="1531" height="707" alt="Portfolio-V2" src="public/portfolio-v2.png"/>
+      <img width="1531" height="707" alt="Portfolio-v2" src="public/portfolio-v2.png"/>
     </a>
   <br />
   <h3 align="center">https://sdulal.dev</h3>

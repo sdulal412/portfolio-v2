@@ -1,13 +1,19 @@
 /* Global Reset */
-body,
-html {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
-  color: #000000;
-  background-color: #ffffff;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden; 
+  overflow-y: auto;
+  background-color: #000;
   -webkit-font-smoothing: antialiased;
 }
 
-* {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
