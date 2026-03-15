@@ -1,0 +1,51 @@
+<div class="site-container">
+  <div class="scanlines"></div>
+
+  <header class="id-beam">
+    <div class="beam-inner">
+      <div class="brand-group">
+        <h1 class="logo-text">SUSHIL DULAL</h1>
+        <span class="role-text">software engineer + artist</span>
+      </div>
+
+      <span class="interactive-notice">
+        interactive version of this portfolio
+        <a href="https://v1.sdulal.dev" target="_blank">v1.sdulal.dev</a>
+      </span>
+    </div>
+  </header>
+
+  <main class="split-layout">
+    <div class="dragon-container">
+      <div class="dragon-side"></div>
+      <div class="eye-overlay"></div>
+      <div class="laser-beam"></div>
+    </div>
+
+    <section class="info-side">
+      <p class="tagline" data-text="where the digital dragons fly">where the digital dragons fly</p>
+
+      <nav class="social-bar">
+        @for (link of socialLinks; track link.label) {
+          <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="social-link">
+            {{ link.label }}
+          </a>
+        }
+      </nav>
+
+      <div class="projects-wrapper">
+        <button class="toggle-btn" (click)="toggleProjects()">PROJECTS</button>
+
+        @if (showProjects) {
+          <div class="projects-dropdown">
+            @for (p of projects; track p.name) {
+              <a [href]="p.url" class="project-item" target="_blank" rel="noopener noreferrer">
+                {{ p.name }}
+              </a>
+            }
+          </div>
+        }
+      </div>
+    </section>
+  </main>
+</div>
