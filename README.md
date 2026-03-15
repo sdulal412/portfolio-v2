@@ -1,7 +1,13 @@
 # sdulal.dev
 
-![portfolio-v2](portfolio-v2.png)
-[https://sdulal.dev](https://sdulal.dev)
+<div align="center">
+  <br />
+    <a>
+      <img width="1531" height="707" alt="Portfolio-V2" src="public/portfolio-v2.png"/>
+    </a>
+  <br />
+  <h3 align="center">https://sdulal.dev</h3>
+</div>
 
 ## Quick Start:
 
