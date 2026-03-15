@@ -64,10 +64,10 @@
 
 .logo-text::before,
 .logo-text::after {
-  content: 'SUSHIL DULAL';
-  position: absolute;
   inset: 0;
+  position: absolute;
   pointer-events: none;
+  content: 'SUSHIL DULAL';
   background: var(--beam-bg);
 }
 

@@ -19,6 +19,7 @@ export class AppComponent {
     { label: 'GITHUB', url: 'https://github.com/sdulal412' },
     { label: 'TWITTER', url: 'https://twitter.com/sdulal412' },
     { label: 'LINKEDIN', url: 'https://linkedin.com/in/sdulal412' },
+    /* Email section */
     { label: 'EMAIL', url: 'mailto:sushildulal123@gmail.com' },
   ];
 
