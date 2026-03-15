@@ -1,5 +1,6 @@
 # sdulal.dev
 
+![portfolio-v2](portfolio-v2.png)
 [https://sdulal.dev](https://sdulal.dev)
 
 ## Quick Start:
