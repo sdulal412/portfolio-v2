@@ -1,6 +1,9 @@
-/* Global Reset */
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -8,12 +11,8 @@ html, body {
   padding: 0;
   width: 100%;
   min-height: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   overflow-y: auto;
   background-color: #000;
   -webkit-font-smoothing: antialiased;
-}
-
-html {
-  scroll-behavior: smooth;
 }
