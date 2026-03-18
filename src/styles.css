@@ -11,8 +11,8 @@ html, body {
   padding: 0;
   width: 100%;
   min-height: 100%;
-  overflow-x: hidden;
   overflow-y: auto;
+  overflow-x: hidden;
   background-color: #000;
   -webkit-font-smoothing: antialiased;
 }

@@ -23,7 +23,7 @@
     </div>
 
     <section class="info-side">
-      <p class="tagline" data-text="where the digital dragons fly">where the digital dragons fly</p>
+      <p class="tagline" [attr.data-text]="activeTagline">{{ activeTagline }}</p>
 
       <nav class="social-bar">
         @for (link of socialLinks; track link.label) {
