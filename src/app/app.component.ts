@@ -11,7 +11,9 @@ export class AppComponent implements OnInit, OnDestroy {
 
   readonly projects = [
     { name: 'UNIT', url: 'https://unit.sdulal.dev' },
+    { name: 'CHESS', url: 'https://chess.sdulal.dev' },
     { name: 'BEAM', url: 'https://beam.sdulal.dev' },
+    { name: 'DUCK-HUNT', url: 'https://duck-hunt.sdulal.dev' },
     { name: 'CANVAS', url: 'https://canvas.sdulal.dev' },
   ];
 
@@ -19,7 +21,6 @@ export class AppComponent implements OnInit, OnDestroy {
     { label: 'GITHUB', url: 'https://github.com/sdulal412' },
     { label: 'TWITTER', url: 'https://twitter.com/sdulal412' },
     { label: 'LINKEDIN', url: 'https://linkedin.com/in/sdulal412' },
-    /* Email section */
     { label: 'EMAIL', url: 'mailto:sushildulal123@gmail.com' },
   ];
 
@@ -44,7 +45,6 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.intervalId = setInterval(() => {
       this.currentTaglineIndex = (this.currentTaglineIndex + 1) % this.taglines.length;
-
       this.cdr.detectChanges();
     }, 4000);
   }
