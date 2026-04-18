@@ -10,11 +10,11 @@ export class AppComponent implements OnInit, OnDestroy {
   showProjects = false;
 
   readonly projects = [
-    { name: 'UNIT', url: 'https://unit.sdulal.dev' },
-    { name: 'CHESS', url: 'https://chess.sdulal.dev' },
-    { name: 'BEAM', url: 'https://beam.sdulal.dev' },
-    { name: 'DUCK-HUNT', url: 'https://duck-hunt.sdulal.dev' },
-    { name: 'CANVAS', url: 'https://canvas.sdulal.dev' },
+    { name: 'UNIT', url: 'https://unit.sushil.io' },
+    { name: 'CHESS', url: 'https://chess.sushil.io' },
+    { name: 'BEAM', url: 'https://beam.sushil.io' },
+    { name: 'DUCK-HUNT', url: 'https://hunt.sushil.io' },
+    { name: 'CANVAS', url: 'https://canvas.sushil.io' },
   ];
 
   readonly socialLinks = [

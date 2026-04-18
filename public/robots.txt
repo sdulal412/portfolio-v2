@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Direct search engines to your sitemap
-Sitemap: https://sdulal.dev/sitemap.xml
+Sitemap: https://sushil.io/sitemap.xml
