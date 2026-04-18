@@ -1,12 +1,12 @@
-# sdulal.dev
+# sushil.io
 
 <div align="center">
   <br />
     <a>
-      <img width="1531" height="707" alt="Portfolio-v2" src="public/portfolio-v2.png"/>
+      <img width="1531" height="707" alt="Portfolio-v2" src="public/portfolio_v2.png"/>
     </a>
   <br />
-  <h3 align="center">https://sdulal.dev</h3>
+  <h3 align="center">https://sushil.io</h3>
 </div>
 
 ## Quick Start:
