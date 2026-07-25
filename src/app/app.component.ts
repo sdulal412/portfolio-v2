@@ -18,10 +18,10 @@ export class AppComponent implements OnInit, OnDestroy {
   ];
 
   readonly socialLinks = [
-    { label: 'GITHUB', url: 'https://github.com/sdulal412' },
-    { label: 'TWITTER', url: 'https://twitter.com/sdulal412' },
-    { label: 'LINKEDIN', url: 'https://linkedin.com/in/sdulal412' },
     { label: 'EMAIL', url: 'mailto:sushildulal123@gmail.com' },
+    { label: 'GITHUB', url: 'https://github.com/sdulal412' },
+    { label: 'LINKEDIN', url: 'https://linkedin.com/in/sdulal412' },
+    { label: 'TWITTER', url: 'https://twitter.com/sdulal412' },
   ];
 
   readonly taglines = [
@@ -32,9 +32,9 @@ export class AppComponent implements OnInit, OnDestroy {
     'deploying legends to the cloud',
     'weaving dragons into the source code',
     'slaying bugs in the shadow of the wing',
+    'taming the beast, one commit at a time',
     'forged in the heat of a thousand builds',
     'architecting systems in a sea of scales',
-    'taming the legacy beast, one commit at a time',
   ];
 
   currentTaglineIndex = 0;
