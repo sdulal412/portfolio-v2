@@ -1,11 +1,14 @@
-<div class="site-container">
-  <div class="scanlines"></div>
+<div class="site-container" [class.crt-on]="crtEnabled" [class.crt-off]="!crtEnabled">
+  @if (crtEnabled) {
+    <div class="scanlines"></div>
+    <div class="crt-vignette"></div>
+  }
 
   <header class="id-beam">
     <div class="beam-inner">
       <div class="brand-group">
-        <h1 class="logo-text">SUSHIL DULAL</h1>
-        <span class="role-text">software developer</span>
+        <h1 class="logo-text" data-text="SUSHIL DULAL">SUSHIL DULAL</h1>
+        <span class="role-text">software engineer</span>
       </div>
 
       <span class="interactive-notice">
@@ -34,13 +37,16 @@
       </nav>
 
       <div class="projects-wrapper">
-        <button class="toggle-btn" (click)="toggleProjects()" type="button">PROJECTS</button>
+        <button class="toggle-btn" (click)="toggleProjects()" type="button">
+          <span>PROJECTS</span>
+          <span class="btn-arrow" [class.open]="showProjects">▼</span>
+        </button>
 
         @if (showProjects) {
           <div class="projects-dropdown">
             @for (p of projects; track p.name) {
               <a [href]="p.url" class="project-item" target="_blank" rel="noopener">
-                {{ p.name }}
+                <span class="item-bullet">›</span> {{ p.name }}
               </a>
             }
           </div>
@@ -48,4 +54,21 @@
       </div>
     </section>
   </main>
+
+  <footer class="system-status-bar">
+    <div class="status-item">
+      <span>STATUS:</span>
+      <span class="status-indicator"></span>
+      <span>ONLINE</span>
+    </div>
+    <button class="crt-toggle-btn" (click)="toggleCrt()" type="button">
+      <span class="crt-label">CRT:</span>
+      <span
+        class="crt-status-value"
+        [style.color]="crtEnabled ? 'var(--bright-red)' : 'var(--accent-modern)'"
+      >
+        {{ crtEnabled ? 'ON ' : 'OFF' }}
+      </span>
+    </button>
+  </footer>
 </div>
