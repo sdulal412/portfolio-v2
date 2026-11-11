@@ -7,21 +7,22 @@ import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit, OnDestroy {
+  crtEnabled = false;
   showProjects = false;
 
   readonly projects = [
-    { name: 'UNIT', url: 'https://unit.sushil.io' },
-    { name: 'CHESS', url: 'https://chess.sushil.io' },
     { name: 'BEAM', url: 'https://beam.sushil.io' },
-    { name: 'DUCK-HUNT', url: 'https://hunt.sushil.io' },
+    { name: 'UNIT', url: 'https://unit.sushil.io' },
     { name: 'CANVAS', url: 'https://canvas.sushil.io' },
+    { name: 'CHESS', url: 'https://chess.sushil.io' },
+    { name: 'DUCK-HUNT', url: 'https://hunt.sushil.io' },
   ];
 
   readonly socialLinks = [
     { label: 'EMAIL', url: 'mailto:sushildulal123@gmail.com' },
     { label: 'GITHUB', url: 'https://github.com/sdulal412' },
+    { label: 'CODEBERG', url: 'https://codeberg.org/sdulal412' },
     { label: 'LINKEDIN', url: 'https://linkedin.com/in/sdulal412' },
-    { label: 'TWITTER', url: 'https://twitter.com/sdulal412' },
   ];
 
   readonly taglines = [
@@ -61,5 +62,9 @@ export class AppComponent implements OnInit, OnDestroy {
 
   toggleProjects(): void {
     this.showProjects = !this.showProjects;
+  }
+
+  toggleCrt(): void {
+    this.crtEnabled = !this.crtEnabled;
   }
 }
